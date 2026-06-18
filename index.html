@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSbraziln | ANÚNCIE AQUI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <h1><span id="textBlue">ADS</span><span id="tittleNav">Brazilians</span></h1>
+        <button id="mudarTema">
+        <img id="temaIcon" src="https://cdn-icons-png.flaticon.com/512/581/581601.png">
+        </button>
+        <ul>
+            <li>
+                <p id="userLogado">Você não está logado</p>
+            </li>
+            <li>
+                <button id="loginSair">Sair</button>
+            </li>
+          
+            <li><button id="buttonLogin">login</button></li>
+        </ul>
+    </nav>
+
+    <div class="login">
+        <h1>Entrar</h1>
+        <p>email</p>
+        <input id="loginEmail" placeholder="Digite seu email" type="email">
+        <p id="erroEmail"></p>
+        <p>senha</p>
+        <input id="loginSenha" placeholder="Mínimo de 4 caracteres" type="password">
+        <p id="erroSenha"></p>
+        <div id="optionLogin">
+            <button id="loginEntrar">entrar</button>
+            <button id="loginCancelar">cancelar</button>
+        </div>
+
+    </div>
+
+    <div id="postagemAds">
+        <h1>Anuncie sua marca em uma Página <br> <span id="colorBluesky">online</span> e  <span id="colorBluesky">totalmente de graça</span></h1>
+        <p>Realize o login e faça sua publicação de produtos, marcar, lojas, freelancer</p>
+        <div id="rules">
+            <li>Proibido qualquer tipo de discriminação</li>
+        </div>
+
+        <button id="postarAds">adicionar anúncio</button>
+        
+        
+        
+    </div>
+
+    <div class="postarAnuncio">
+        <h1>Nova propaganda</h1>
+        <p>título</p>
+        <input  placeholder="Digite seu título" id="tituloAds" type="text">
+        <p id="erroTitulo"></p>
+        <p>Descrição</p>
+        <input id="descAds" placeholder="Digite a descrição do seu anúncio" type="text">
+        <p id="erroDesc"></p>
+        <p>link da propaganda</p>
+        <input id="linkAds" placeholder="https://seulink.com" type="link">
+        <p>Imagem</p>
+        <input id="imagemAds" type="file" accept="image/jpg">
+        <p id="erroTodos"></p>
+
+        <div id="publicar">
+            <button id="buttonPublicar">Publicar</button>
+            <button id="cancelarPublicar">Cancelar</button>
+        </div>
+    </div>
+
+    <section class="areaAnuncios">
+        <div id="anuncioPublicado">
+            <img src="https://ufsb.edu.br/governanca/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png" alt="image">
+
+            <div id="informacoes">
+                <h1>Pinguins de madadascar</h1>
+                <p>SHOW DE BOLA ESSES PINGUINS ACHO QUE É A COISA MAIS IMPRESSIONANTE Q EU JA VI NA MINHA VIDA</p>
+                <a href="">saiba mais</a>
+            </div>
+        </div>
+    <div id="anuncioPublicado">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg" width="300">
+
+            <div id="informacoes">
+                <h1>titulo</h1>
+                <p>descricao</p>
+                <a href="">saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- aviso erro adicionar anuncio -->
+
+    <div id="erroAdicionar">
+        <p>erro! você precisa fazer o login antes de adicionar um anuncio</p>
+    </div>
+    <div id="notificacaoPost">
+        <p>Seu anúncio foi publicado!</p>
+    </div>
+
+    <footer>
+        <p>ADSBrazilians © 2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
